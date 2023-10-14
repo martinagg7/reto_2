@@ -1,0 +1,140 @@
+5 5 2
++-
+
+5 1 2
+-+-+-+-+-+-+-+-+-+-+
+4-1+1-1
+5 3 x
++[-+]   + nos llevan al YES
+[-+]    [-...+] NOS LLEVA A UN MAYBE
+
+subr 6
+onl 1
++-    [-+][-+][-+][-+]  4 maybes  +  5 yes 
+IF:
+    online + yes == subscriptor  YES
+ELSE: 
+    online + maybe + yes  >= subscriptor MAYBE
+    1 + 1 + 5   (7)
+    ELSE : NO
+--+++
+5-4-3+4+5
+--+ +
+recorrers la trama de izquierda a derecha
+debes ir contando los - (sueltos)
+por cada + que encuentres debes convertirlo en maybe si existe un - suelto (anterior)
+si no existen - sueltos el + es un yes
+++--
+            .           .   .
+        .       .       .
+    .               .
+.                       
+
+-+   
+5 4 2
++-
+
+7 5 x
+++-+-+-+-+- 
+YES 
+IF online==subscriptor:
+    YES 
+ELSE:
+    CONTROLAR EL "MOMENTO" de usuarios conectados si la suma == subscriptiores
+    YES
+    - SI Q + "+"'s es igual igual MAYBE
+    ELSE:
+        no
+
+opcion 1: comparar online== subscriptiores==>yes
+opcion 2: tener en cuenta el orden de los + (sumar/restar y ver si en algun momento llega a subscriptores) => yes
+opcion 3: sumar los +
+opcion 4: el resto
+
+
+
+
+-,,,,++-+|-+-++
+---++
+maybes
+yes 
+signomenos = 0
+yes = 0 
+maybes = 0
+flagYes = False
+flagMaybe = False
+trama "-+-+-+-"
+
+"""
+i = 0
+while i<10: #determiadas o inderminadas
+    BUCLE
+    i+=1
+"""
+x = 0
+yes=0
+maybes=0
+signosmenos=0
+flag_yes=False
+flag_maybe=False
+while x<len(trama) and not flag_yes:
+    #tratar(signo)
+    if signo == "-":
+        signosmenos += 1 
+    elif signo == "+":
+        si signosmenos >0:
+            maybes += 1 
+            signosmenos -= 1
+        else:
+            yes +=1
+    if online + yes == subscriptores:
+        flag_yes = True #break
+    else: 
+        if online + maybe + yes >= subscriptores:
+            flag_maybe = True
+    x+=1
+
+if flag_yes:
+    print("yes")
+elif flag_maybe:
+    print("maybe")
+else:
+    print("no")
+
+SI VENGO DE YES, puedo confirmar que yes
+
+
+
+
+
+for i in range(10): #vueltas determinadas range(0,10,1)
+    print(i)
+
+i = 0
+while i<10: #determiadas o inderminadas
+    BUCLE
+    i+=1
+
+i = 0
+encontrado = Flase
+while i<10 and not encontrado: #determiadas o inderminadas
+    print(i)
+    if array[i] ==5:
+        encontrado = True
+    i+=1
+
+texto = "asdfadsfasdf"
+for letra in texto:
+    print(letra)
+
+print(texto[i])
+
+contador = 0
+for x in range(len(lista)):
+    print(lista[x])
+
+
+lista = [1,2,6,3,7,2,8]
+lista = range(10)
+for x in range(10): 
+    print(x)
